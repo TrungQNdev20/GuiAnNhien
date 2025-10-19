@@ -246,6 +246,11 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--padding-base);
+    background-image: url('img/Background1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .section-container {
@@ -400,6 +405,32 @@ hr {
     padding-bottom: 5px;
 }
 
+.mon-detail p strong {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    background-color: var(--color-secondary);
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#ngam-chan .menu-item {
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
 /* Căn giữa và định dạng riêng cho nút Đăng ký ở khu vực main */
 #dang-ky-trai-nghiem {
     padding: 30px 0; /* Thêm khoảng cách trên/dưới để nút nổi bật */
@@ -552,3 +583,4 @@ footer {
         padding: 10px;
     }
 }
+
