@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 /* --- CSS MỚI ĐƯỢC THÊM VÀO ĐỂ SỬA LOGO VÀ BACKGROUND --- */
 
 /* Loại bỏ các section cũ không còn dùng (đảm bảo không bị hiển thị) */
@@ -144,6 +147,12 @@ body {
     background-color: var(--color-background);
     color: var(--color-text-dark);
     line-height: 1.6;
+    background-image: url('img/Background1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /* Use Playfair Display for headings to get an artistic serif look */
@@ -193,7 +202,8 @@ h1, h2, h3, .hero-title {
 
 .gallery-img {
     width: 100%;
-    height: 220px;
+    height: auto;
+    aspect-ratio: 4/3;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
@@ -246,11 +256,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--padding-base);
-    background-image: url('img/Background1.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .section-container {
@@ -570,7 +575,7 @@ footer {
 
     .gallery-img {
         width: 100%;
-        height: 180px;
+        height: auto;
 
     }
 
@@ -624,7 +629,7 @@ footer {
     }
 
     .gallery-img {
-        height: 150px;
+        height: auto;
     }
 
     .hero-logo-img {
@@ -655,7 +660,7 @@ footer {
         max-height: 600px;
     }
     .gallery-img {
-        height: 260px;
+        height: auto;
     }
     .hero-logo-img {
         max-height: 220px;
