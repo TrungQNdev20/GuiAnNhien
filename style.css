@@ -547,19 +547,33 @@ footer {
     }
 
     .menu-buttons {
+        flex-direction: column;
         align-items: center;
+        gap: 20px;
+    }
+
+    .menu-item {
+        max-width: 100%;
+        width: 100%;
     }
 
     .menu-btn {
         text-align: center;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .gallery-img {
         width: 100%;
         height: 180px;
-       
+
     }
-    
+
     .footer-content-wrapper {
         flex-direction: column; /* Xếp cột dọc trên điện thoại */
         text-align: center;
@@ -572,12 +586,67 @@ footer {
         display: block;
         margin: 15px auto;
     }
+
+    .hero-intro-inner {
+        padding: 0 15px;
+    }
+
+    .hinh-anh-dn {
+        font-size: 3rem;
+    }
+
+    .section-container {
+        padding: 20px 0;
+    }
 }
 
 @media (max-width: 480px) {
     .hinh-anh-dn {
-        font-size: 1.6rem;
-        letter-spacing: 1.5px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .slogan {
+        font-size: 0.9rem;
+    }
+
+    .menu-item-image {
+        max-height: 200px;
+    }
+
+    .section-image {
+        max-height: 300px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .gallery-img {
+        height: 150px;
+    }
+
+    .hero-logo-img {
+        max-height: 120px;
+        padding: 5px;
+    }
+
+    .footer-content-wrapper {
+        padding: 0 10px;
+    }
+
+    .menu-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-container {
+        padding: 15px 0;
     }
 }
 
