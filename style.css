@@ -343,10 +343,11 @@ hr {
 
 .menu-buttons {
     width: 100%;
-    max-width: 420px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .menu-btn {
@@ -417,11 +418,13 @@ hr {
 }
 
 .menu-item {
-    border: 1px solid var(--color-secondary);
+    border: none;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    flex: 1;
+    max-width: 300px;
 }
 
 #ngam-chan .menu-item {
@@ -429,6 +432,14 @@ hr {
     background-color: transparent;
     padding: 10px 0;
     margin-bottom: 10px;
+}
+
+#ngam-chan .menu-buttons {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Căn giữa và định dạng riêng cho nút Đăng ký ở khu vực main */
